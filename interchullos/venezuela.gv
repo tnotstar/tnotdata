@@ -1,0 +1,33 @@
+graph venezuela {
+    subgraph bankers {
+        vvi1 [
+            label="Víctor Vargas",
+            full="Víctor Vargas Irausquín",
+            link="https://es.wikipedia.org/wiki/V%C3%ADctor_Vargas",
+        ];
+    }
+
+    subgraph politicians {
+        hrcf1 [
+            label="Hugo Chávez",
+            full="Hugo Rafael Chávez Frías",
+            link="https://es.wikipedia.org/wiki/Hugo_Ch%C3%A1vez",
+        ];
+        lmmh1 [
+            label="Luis Miquilena",
+            full="Luis Manuel Miquilena Hernández",
+            link="https://es.wikipedia.org/wiki/Luis_Miquilena",
+        ];
+    }
+
+    subgraph journalists {
+        cerg1 [
+            label="Carlos Rangel",
+            full="Carlos Enrique Rangel Guevara",
+            link="https://es.wikipedia.org/wiki/Carlos_Rangel",
+        ];
+    }
+
+    vvi1 -- hrcf1
+    hrcf1 -- lmmh1
+}
