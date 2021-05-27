@@ -1,0 +1,48 @@
+graph spain {
+    subgraph politicians {
+        style=filled;
+        color=lightgrey;
+        fgm1 [
+            label="Felipe González",
+            full="Felipe González Márquez",
+            link="https://es.wikipedia.org/wiki/Felipe_Gonz%C3%A1lez",
+        ];
+    }
+
+    subgraph bankers {
+        macc1 [
+            label="Mario Conde",
+            full="Mario Antonio Conde Conde",
+            link="https://es.wikipedia.org/wiki/Mario_Conde",
+        ];
+    }
+
+    subgraph journalists {
+        ahl1 [
+            label="Antonio Herrero",
+            full="Antonio Herrero Lima",
+            link="https://es.wikipedia.org/wiki/Antonio_Herrero"
+        ];
+        lfha1 [
+            label="Luis Herrero",
+            full="Luis Francisco Herrero-Tejedor Algar",
+            link="https://es.wikipedia.org/wiki/Luis_Herrero"
+        ];
+        fjl1 [
+            label="Federico Jiménez Losantos",
+            full="Federico Jorge Jiménez Losantos",
+            link="https://es.wikipedia.org/wiki/Federico_Jim%C3%A9nez_Losantos"
+        ]
+        cvm1 [
+            label="César Vidal",
+            full="César Vidal",
+            link="https://es.wikipedia.org/wiki/Federico_Jim%C3%A9nez_Losantos"
+        ];
+
+        ahl1 -- lfha1
+        ahl1 -- fjl1
+        lfha1 -- fjl1
+        fjl1 -- cvm1
+        lfha1 -- cvm1
+    }
+}
