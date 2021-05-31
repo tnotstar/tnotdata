@@ -60,42 +60,69 @@ graph spain {
             label="Oscar de Alfonso Ortega",
             link="https://www.facebook.com/oscar.dealfonsoortega",
         ];
+        nfa1 [
+            label="Nuria Fuertes Abella",
+            full="Nuria Fuertes Abella",
+            link="https://www.facebook.com/nuria.fuertesabella",
+        ];
         mdab1 [
             label="Marino de Armas",
             full="Marino de Armas Benitez",
             link="https://www.facebook.com/marino.dearmasbenitez",
         ];
+        ppr1 [
+            label="Patricia Planas",
+            full="Patricia Planas Rufino",
+            link="https://www.facebook.com/patricia.planasrufino",
+        ];
+
+        nfa1 -- ppr1;
     };
 
     subgraph organizations {
         glde1 [
             label="Gran Logia de España",
             full="Gran Logia de España",
-            link="https://gle.org"
+            link="https://gle.org",
+        ];
+        glfe1 [
+            label="Gran Logia Femenina de España",
+            full="Gran Logia Femenina de España",
+            link="https://glfe.org",
         ];
         glpa1 [
             label="Gran Logia Provincial de Andalucía",
             full="Gran Logia Provincial de Andalucía",
-            link="https://glpa.es"
+            link="https://glpa.es",
+        ];
+        glpc1 [
+            label="Gran Logia Provincial de Catalunya",
+            full="Gran Logia Provincial de Catalunya",
+            link="https://granlogiacatalunya.com",
         ];
         amh1 [
             label="Asociación Maestro Hiram",
             full="Asociación Maestro Hiram",
-            link="https://asociacionmaestrohiram.wordpress.com"
+            link="https://asociacionmaestrohiram.wordpress.com",
         ];
         ana1 [
             label="Asociación Añaza 1895",
             full="Asociación Nacional Añaza 1895",
-            link="http://anaza1895.blogspot.com"
+            link="http://anaza1895.blogspot.com",
         ];
 
-        glde1 -- odao1;
-
+        glde1 -- glfe1;
+        glde1 -- glpc1;
+        glde1 -- glpa1;
         glde1 -- amh1;
         glpa1 -- amh1;
         amh1 -- ana1;
     };
 
-    fvi1 -- glde1;
-    mdab1 -- ana1;
+    glde1 -- fvi1;
+    glde1 -- odao1;
+    glfe1 -- nfa1;
+    glfe1 -- ppr1;
+    ana1 -- mdab1;
+    odao1 -- macc1;
 }
