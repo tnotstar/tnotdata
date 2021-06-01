@@ -1,13 +1,10 @@
 graph venezuela {
-    subgraph bankers {
-        vvi1 [
-            label="Víctor Vargas",
-            full="Víctor Vargas Irausquín",
-            link="https://es.wikipedia.org/wiki/V%C3%ADctor_Vargas",
-        ];
-    }
-
     subgraph politicians {
+        sfdmre1 [
+            label="Francisco de Miranda",
+            full="Sebastián Francisco de Miranda y Rodríguez Espinoza",
+            link="https://es.wikipedia.org/wiki/Francisco_de_Miranda",
+        ];
         hrcf1 [
             label="Hugo Chávez",
             full="Hugo Rafael Chávez Frías",
@@ -18,7 +15,15 @@ graph venezuela {
             full="Luis Manuel Miquilena Hernández",
             link="https://es.wikipedia.org/wiki/Luis_Miquilena",
         ];
-    }
+    };
+
+    subgraph bankers {
+        vvi1 [
+            label="Víctor Vargas",
+            full="Víctor Vargas Irausquín",
+            link="https://es.wikipedia.org/wiki/V%C3%ADctor_Vargas",
+        ];
+    };
 
     subgraph journalists {
         cerg1 [
@@ -26,8 +31,23 @@ graph venezuela {
             full="Carlos Enrique Rangel Guevara",
             link="https://es.wikipedia.org/wiki/Carlos_Rangel",
         ];
-    }
+    };
 
-    vvi1 -- hrcf1
-    hrcf1 -- lmmh1
+    subgraph organizations {
+        gra1 [
+            label="Gran Reunión Americana",
+            link="https://es.wikipedia.org/wiki/Logia_Lautaro",
+        ];
+        sp1 [
+            label="Sociedad Patriótica",
+            link="https://es.wikipedia.org/wiki/Sociedad_Patri%C3%B3tica_(Venezuela)",
+        ];
+
+        gra1 -- sp1;
+    };
+
+    gra1 -- sfdmre1;
+
+    vvi1 -- hrcf1;
+    hrcf1 -- lmmh1;
 }
