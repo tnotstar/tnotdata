@@ -52,17 +52,23 @@ graph spain {
         lfha1 -- fjl1;
         fjl1 -- cvm1;
         lfha1 -- cvm1;
-    }
+    };
+
+    subgraph academics {
+        jafb1 [
+            label="José Antonio Ferrer Benimeli",
+            link="https://es.wikipedia.org/wiki/Jos%C3%A9_Antonio_Ferrer_Benimeli",
+        ];
+    };
 
     subgraph leaders {
         odao1 [
             label="Oscar de Alfonso",
-            label="Oscar de Alfonso Ortega",
+            full="Oscar de Alfonso Ortega",
             link="https://www.facebook.com/oscar.dealfonsoortega",
         ];
         nfa1 [
             label="Nuria Fuertes Abella",
-            full="Nuria Fuertes Abella",
             link="https://www.facebook.com/nuria.fuertesabella",
         ];
         mdab1 [
@@ -82,33 +88,32 @@ graph spain {
     subgraph organizations {
         glde1 [
             label="Gran Logia de España",
-            full="Gran Logia de España",
             link="https://gle.org",
         ];
         glfe1 [
             label="Gran Logia Femenina de España",
-            full="Gran Logia Femenina de España",
             link="https://glfe.org",
         ];
         glpa1 [
             label="Gran Logia Provincial de Andalucía",
-            full="Gran Logia Provincial de Andalucía",
             link="https://glpa.es",
         ];
         glpc1 [
             label="Gran Logia Provincial de Catalunya",
-            full="Gran Logia Provincial de Catalunya",
             link="https://granlogiacatalunya.com",
         ];
         amh1 [
             label="Asociación Maestro Hiram",
-            full="Asociación Maestro Hiram",
             link="https://asociacionmaestrohiram.wordpress.com",
         ];
         ana1 [
             label="Asociación Añaza 1895",
             full="Asociación Nacional Añaza 1895",
             link="http://anaza1895.blogspot.com",
+        ];
+        cehme1 [
+            label="Centro de Estudios Históricos de la Masonería Española",
+            link="",
         ];
 
         glde1 -- glfe1;
@@ -125,4 +130,5 @@ graph spain {
     glfe1 -- ppr1;
     ana1 -- mdab1;
     odao1 -- macc1;
+    cehme1 -- jafb1;
 }
