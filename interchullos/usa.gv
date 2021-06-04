@@ -1,0 +1,19 @@
+graph usa {
+    subgraph companies {
+        b1 [
+            label="BlackRock",
+            full="BlackRock",
+            link="https://es.wikipedia.org/wiki/BlackRock",
+        ];
+        tvg1 [
+            label="The Vanguard Group",
+            full="Vanguard",
+            link="https://en.wikipedia.org/wiki/The_Vanguard_Group",
+        ];
+        ssc1 [
+            label="State Street Corporation",
+            full="State Street",
+            link="https://en.wikipedia.org/wiki/State_Street_Corporation",
+        ];
+    };
+}
