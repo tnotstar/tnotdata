@@ -16,4 +16,12 @@ graph usa {
             link="https://en.wikipedia.org/wiki/State_Street_Corporation",
         ];
     };
+
+    subgraph jounalists {
+        mrg1 [
+            label="Michael R. Gordon",
+            full="Michael R. Gordon",
+            link="https://en.wikipedia.org/wiki/Michael_R._Gordon",
+        ];
+    };
 }
