@@ -17,6 +17,14 @@ graph usa {
         ];
     };
 
+    subgraph foundations {
+        bmgf1 [
+            label="Gates Foundation",
+            full="Bill & Melinda Gates Foundation",
+            link="",
+        ];
+    };
+
     subgraph jounalists {
         mrg1 [
             label="Michael R. Gordon",
@@ -24,4 +32,14 @@ graph usa {
             link="https://en.wikipedia.org/wiki/Michael_R._Gordon",
         ];
     };
+
+    subgraph doctors {
+        rv1 [
+            label="Rajeev Venkayya",
+            full="Rajeev Venkayya, M.D.",
+            link="https://www.linkedin.com/in/rvenkayya",
+        ];
+    };
+
+    bmgf1 -- rv1;
 }
