@@ -1,4 +1,43 @@
 graph usa {
+    subgraph politicians {
+        style=filled;
+        color=lightgrey;
+        gw1 [
+            label="George Washington",
+            full="George Washington",
+            link="https://en.wikipedia.org/wiki/George_Washington",
+        ];
+        aj1 [
+            label="Andrew Johnson",
+            full="Andrew Johnson",
+            link="https://en.wikipedia.org/wiki/Andrew_Johnson",
+        ];
+    };
+
+    subgraph leaders {
+        ap1 [
+            label="Albert Pike",
+            full="Albert Pike",
+            link="https://en.wikipedia.org/wiki/Albert_Pike",
+        ];
+    };
+
+    subgraph jounalists {
+        mrg1 [
+            label="Michael R. Gordon",
+            full="Michael R. Gordon",
+            link="https://en.wikipedia.org/wiki/Michael_R._Gordon",
+        ];
+    };
+
+    subgraph doctors {
+        rv1 [
+            label="Rajeev Venkayya",
+            full="Rajeev Venkayya, M.D.",
+            link="https://www.linkedin.com/in/rvenkayya",
+        ];
+    };
+
     subgraph companies {
         b1 [
             label="BlackRock",
@@ -25,21 +64,21 @@ graph usa {
         ];
     };
 
-    subgraph jounalists {
-        mrg1 [
-            label="Michael R. Gordon",
-            full="Michael R. Gordon",
-            link="https://en.wikipedia.org/wiki/Michael_R._Gordon",
+    subgraph lodges {
+        fml4 [
+            label="Washington's Lodge",
+            full="Fredericksburg Masonic Lodge No. 4",
+            link="https://masoniclodge4.org",
         ];
-    };
-
-    subgraph doctors {
-        rv1 [
-            label="Rajeev Venkayya",
-            full="Rajeev Venkayya, M.D.",
-            link="https://www.linkedin.com/in/rvenkayya",
+        gl119 [
+            label="Greenville Lodge No. 119",
+            full="Greenville Lodge No. 119",
+            link="",
         ];
     };
 
     bmgf1 -- rv1;
+    fml4 -- gw1;
+    gl119 -- aj1;
+    aj1 -- ap1;
 }
