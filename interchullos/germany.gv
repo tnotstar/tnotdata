@@ -1,0 +1,9 @@
+graph germany {
+    subgraph leaders {
+        kms1 [
+            label="Klaus Schwab",
+            full="Klaus Martin Schwab",
+            link="https://es.wikipedia.org/wiki/Klaus_Schwab",
+        ];
+    };
+}
