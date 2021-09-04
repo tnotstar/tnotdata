@@ -1,4 +1,4 @@
-graph spain {
+subgraph spain {
     subgraph aristocrats {
         fvi1 [
             label="Felipe VI",

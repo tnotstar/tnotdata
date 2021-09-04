@@ -1,4 +1,4 @@
-graph venezuela {
+subgraph venezuela {
     subgraph politicians {
         sfdmre1 [
             label="Francisco de Miranda",

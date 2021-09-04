@@ -1,4 +1,4 @@
-graph uk {
+subgraph uk {
     subgraph leaders {
         jsh1 [
             label="Julian Huxley",
