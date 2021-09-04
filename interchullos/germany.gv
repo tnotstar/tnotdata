@@ -6,4 +6,6 @@ graph germany {
             link="https://es.wikipedia.org/wiki/Klaus_Schwab",
         ];
     };
+
+    wef1 -- kms1;
 }
