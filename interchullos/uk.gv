@@ -1,0 +1,11 @@
+graph uk {
+    subgraph leaders {
+        jsh1 [
+            label="Julian Huxley",
+            full="Sir Julian Sorell Huxley FRS",
+            link="https://en.wikipedia.org/wiki/Julian_Huxley",
+        ];
+    };
+
+    unesco1 -- jsh1;
+}
