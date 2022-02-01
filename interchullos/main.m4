@@ -1,3 +1,5 @@
+dnl Copyright 2022, Antonio Alvarado Hernández
+dnl
 graph {
 define(`graph', `subgraph')dnl
 dnl

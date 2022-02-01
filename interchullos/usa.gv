@@ -1,3 +1,5 @@
+// Copyright 2022, Antonio Alvarado Hernández
+
 graph usa {
     subgraph politicians {
         style=filled;

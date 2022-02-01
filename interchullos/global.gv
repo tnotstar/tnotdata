@@ -1,3 +1,5 @@
+// Copyright 2022, Antonio Alvarado Hernández
+
 graph global {
     subgraph organizations {
         wef1 [
