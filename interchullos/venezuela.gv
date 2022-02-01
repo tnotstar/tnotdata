@@ -1,19 +1,34 @@
-subgraph venezuela {
+graph venezuela {
     subgraph politicians {
         sfdmre1 [
             label="Francisco de Miranda",
             full="Sebastián Francisco de Miranda y Rodríguez Espinoza",
             link="https://es.wikipedia.org/wiki/Francisco_de_Miranda",
         ];
+        racr1 [
+            label="Rafael Caldera",
+            full="Rafael Antonio Caldera Rodríguez",
+            link="https://es.wikipedia.org/wiki/Rafael_Caldera",
+        ];
         hrcf1 [
             label="Hugo Chávez",
             full="Hugo Rafael Chávez Frías",
-            link="https://es.wikipedia.org/wiki/Hugo_Ch%C3%A1vez",
+            link="https://es.wikipedia.org/wiki/Hugo_Chávez",
         ];
         lmmh1 [
             label="Luis Miquilena",
             full="Luis Manuel Miquilena Hernández",
             link="https://es.wikipedia.org/wiki/Luis_Miquilena",
+        ];
+        tpm1 [
+            label="Teodoro Petkoff",
+            full="Teodoro Petkoff Malek",
+            link="https://es.wikipedia.org/wiki/Teodoro_Petkoff",
+        ];
+        aap1 [
+            label="Alfredo Peña",
+            full="Alfredo Antonio Peña",
+            link="https://es.wikipedia.org/wiki/Alfredo_Peña_(político)",
         ];
     };
 
@@ -21,7 +36,35 @@ subgraph venezuela {
         vvi1 [
             label="Víctor Vargas",
             full="Víctor Vargas Irausquín",
-            link="https://es.wikipedia.org/wiki/V%C3%ADctor_Vargas",
+            link="https://es.wikipedia.org/wiki/Víctor_Vargas",
+        ];
+        jcer1 [
+            label="Juan Carlos Escotet",
+            full="Juan Carlos Escotet Rodríguez",
+            link="https://es.wikipedia.org/wiki/Juan_Carlos_Escotet",
+        ];
+    };
+
+    subgraph entrepreneurs  {
+        rgb1 [
+            label="Raúl Gorrín",
+            full="Raúl Gorrín Belisario",
+            link="https://es.wikipedia.org/wiki/Raúl_Gorrín",
+        ];
+        tcn1 [
+            label="Tobias Carrero",
+            full="Tobías Carrero Nácar",
+            link="https://es.wikipedia.org/wiki/Tobías_Carrero_Nácar"
+        ];
+        jdc1 [
+            label="Juan Domingo Cordero",
+            full="Juan Domingo Cordero",
+            link="https://poderopediave.org/persona/juan-domingo-cordero",
+        ];
+        mb1 [
+            label="Moris Beracha",
+            full="Moris Beracha",
+            link="https://www.linkedin.com/in/morisberacha",
         ];
     };
 
@@ -30,6 +73,21 @@ subgraph venezuela {
             label="Carlos Rangel",
             full="Carlos Enrique Rangel Guevara",
             link="https://es.wikipedia.org/wiki/Carlos_Rangel",
+        ];
+        dllf1 [
+            label="Daniel Lara Farías",
+            full="Daniel Libardo Lara Farías",
+            link="https://www.facebook.com/DLaraFTV",
+        ];
+        pp1 [
+            label="Patricia Poleo",
+            full="Patricia Poleo",
+            link="https://es.wikipedia.org/wiki/Patricia_Poleo",
+        ];
+        rdpi1 [
+            label="Rafael Poleo",
+            full="Rafael David Poleo Isava",
+            link="https://es.wikipedia.org/wiki/Rafael_Poleo",
         ];
     };
 
@@ -40,7 +98,7 @@ subgraph venezuela {
         ];
         sp1 [
             label="Sociedad Patriótica",
-            link="https://es.wikipedia.org/wiki/Sociedad_Patri%C3%B3tica_(Venezuela)",
+            link="https://es.wikipedia.org/wiki/Sociedad_Patriótica_(Venezuela)",
         ];
 
         gra1 -- sp1;
@@ -48,6 +106,11 @@ subgraph venezuela {
 
     gra1 -- sfdmre1;
 
-    vvi1 -- hrcf1;
+    hrcf1 -- aap1
+    hrcf1 -- racr1
     hrcf1 -- lmmh1;
+    hrcf1 -- vvi1;
+    racr1 -- tpm1
+    dllf1 -- pp1;
+    pp1 -- rdpi1;
 }

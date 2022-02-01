@@ -1,4 +1,4 @@
-subgraph usa {
+graph usa {
     subgraph politicians {
         style=filled;
         color=lightgrey;

@@ -1,4 +1,4 @@
-subgraph germany {
+graph germany {
     subgraph leaders {
         kms1 [
             label="Klaus Schwab",
