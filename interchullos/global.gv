@@ -10,5 +10,9 @@ graph global {
             label="UNESCO",
             link="https://www.unesco.org",
         ];
+        g30 [
+            label="Group of Thirty",
+            link="https://www.group30.org",
+        ];
     };
 }
