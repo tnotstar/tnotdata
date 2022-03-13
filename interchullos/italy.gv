@@ -1,0 +1,13 @@
+// Copyright 2022, Antonio Alvarado Hernández
+
+graph spain {
+    subgraph industrialist {
+        ap2 [
+            label="Aurelio Peccei",
+            full="Aurelio Peccei",
+            link="https://en.wikipedia.org/wiki/Aurelio_Peccei",
+        ];
+    };
+
+    cor1 -- ap2;
+}

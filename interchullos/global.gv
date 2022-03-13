@@ -14,5 +14,9 @@ graph global {
             label="Group of Thirty",
             link="https://www.group30.org",
         ];
+        cor1 [
+            label="Club Of Rome",
+            link="http://clubofrome.org",
+        ];
     };
 }
